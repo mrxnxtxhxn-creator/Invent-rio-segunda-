@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scanner de Inventário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Scanner de Pacotes</h1>
+        
+        <div class="input-section">
+            <label>IDs Válidos (separados por vírgula):</label>
+            <textarea id="validIds" placeholder="Ex: ABC123, XYZ789, DEF456"></textarea>
+            <button onclick="saveIds()">Salvar IDs</button>
+        </div>
+
+        <div id="camera-container">
+            <div id="reader"></div>
+        </div>
+        
+        <div id="result"></div>
+    </div>
+
+    <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
